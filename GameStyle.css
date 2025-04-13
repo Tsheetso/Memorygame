@@ -1,0 +1,38 @@
+gameboard {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap:10px;
+    width: 400px;
+    height:400px;
+    margin:40px auto;
+
+}
+card{
+    position:relative;
+    width:90px;
+    height: 90px;
+    transform-style:preserve-3d;
+    transition: transform 0.5s;
+
+}
+card.front, .card-back{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    backface-visibility:hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:36px;
+
+}
+card-front{
+    background: color #0c0b0b;
+
+}
+card-back{
+    background-color:#fff;
+    transform:rotateY('angle')
+}
