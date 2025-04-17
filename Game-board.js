@@ -90,7 +90,7 @@ function checkForMatch() {
       secondCard.classList.add('matched');
       matchedCount += 1;
   
-      if (matchedCount === 8) {
+      if (matchedCount === 16) {
         setTimeout(() => alert("🎉 You Win!"), 200);
       }
     } else {
@@ -112,7 +112,10 @@ function checkForMatch() {
       array[randomIndex] = temp;
     }
     return array;
+//call init function
+Infinity();
   }
+
   //Start the timer
   function StartTimer(){
     time= setInterval(() =>
